@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<title>Coreator: Do Something - Together</title>
+		
+		<!--Stylesheets-->
+		<link rel="stylesheet" type="text/css" href="static/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="static/bower_components/components-font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="static/css/main.css">
+		<link rel="stylesheet" type="text/css" href="static/css/buttons.css">
+		<link rel="stylesheet" type="text/css" href="static/css/login_form.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		
+	</head>
+
+<body>
+ <!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" id="header">
+  <div class="container-fullwidth">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img id="logo" src="/img/coreator-logo.png"/></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#about">Projects</a></li>
+        <li><a href="#contact">People</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"  data-toggle="modal" data-target="#loginModal">Sign In</a></li>
+        <li><a href="/register">Register</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="loginModalLabel">Login to Coreator</h4>
+      </div>
+      <div class="modal-body">
+			<form method="post" action='' name="login_form">
+
+	           <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				</div>
+				<div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				</div>
+	            <p><button type="submit" class="btn btn-primary">Sign in</button>
+                <a href="#">Forgot Password?</a>
+              </p>
+            </form>
+      </div>
+    </div>
+  </div>
+</div>

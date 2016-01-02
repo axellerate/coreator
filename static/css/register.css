@@ -1,0 +1,45 @@
+#register-form{
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+#email_valid{
+	display:none;
+}
+
+#email_error{
+	display:none;
+}
+
+#password_valid{
+	display:none;
+}
+
+#password_error{
+	display:none;
+}
+
+#retype_password_valid{
+	display:none;
+}
+
+#retype_password_error{
+	display:none;
+}
+
+#first_name_valid{
+	display:none;
+}
+
+#first_name_error{
+	display:none;
+}
+
+#last_name_valid{
+	display:none;
+}
+
+#last_name_error{
+	display:none;
+}

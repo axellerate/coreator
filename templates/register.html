@@ -1,0 +1,58 @@
+{% include "header.html" %}
+
+<link rel="stylesheet" type="text/css" href="static/css/register.css">
+
+<div id="main_content">
+
+<div role="form" id="register-form">
+        <br/>
+        <center><h3><u>Registration Form</u></h3></center>
+        <br/>
+          <div class="form-group">
+            <label class="required" for="email">
+             Email:          
+              <span id="email_valid"> <i class="fa fa-check"></i></span>
+              <span id="email_error"> <i class="fa fa-times"> Invalid email address.</i></span>
+            </label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" />
+          </div>
+          <div class="form-group">
+            <label class="required" for="pwd">Password:
+              <span id="password_valid"> <i class="fa fa-check"></i></span>
+              <span id="password_error"> <i class="fa fa-times"> Your password is too short (6 or more characters).</i></span>
+            </label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" />
+          </div>
+          <div class="form-group">
+            <label class="required" for="pwd">Retype Password:
+              <span id="retype_password_valid"> <i class="fa fa-check"></i></span>
+              <span id="retype_password_error"> <i class="fa fa-times"> Your passwords do not match.</i></span>
+            </label>
+            <input type="password" class="form-control" id="retype_password" name="retype_password" placeholder="Retype password" />
+          </div>
+          <div class="form-group">
+            <label  class="required" for="pwd">First Name:
+              <span id="first_name_valid"> <i class="fa fa-check"></i></span>
+              <span id="first_name_error"> <i class="fa fa-times"> You need to enter a first name.</i></span>
+            </label>
+            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" />
+          </div>
+          <div class="form-group">
+            <label class="required" for="pwd">Last Name:
+              <span id="last_name_valid"> <i class="fa fa-check"></i></span>
+              <span id="last_name_error"> <i class="fa fa-times"> You need to enter a last name.</i></span>
+            </label>
+            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" />
+          </div>
+          <div class="form-group">
+            <label for="pwd">How would you identify yourself?</label>
+               <select class="form-control" id="profession" name="profession"></select>
+          </div>
+          <br/>
+          <button type="submit" id="register_button" class="btn btn-primary btn-block">Register Me</button>
+        </div>
+</div><!--End of main content-->
+
+<script type="text/babel" src="static/js/register.js"></script>
+
+{% include "footer.html" %}

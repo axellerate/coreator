@@ -1,0 +1,41 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+#header{
+  width: 100%;
+  height: 51px;
+  opacity: 0.9;
+  position: fixed;
+  background: #222222;
+}
+
+#logo{
+  height: 25px;
+  margin-top: -3px;
+}
+
+#logo:hover{
+  opacity: 0.8;
+}
+
+.navbar{
+  background: #222222;
+}
+
+.navbar li a{
+  color: #fff !important;
+}
+
+.navbar li a:hover{
+  text-decoration: underline;
+}
+
+.navbar-right{
+  padding-right: 10px;
+}
+
+#banner{
+  margin-top: 51px;
+}
